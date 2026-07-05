@@ -1,0 +1,68 @@
+# ==================================================
+# Core Python/Setuptools artefacts (pip install -e .)
+# ==================================================
+
+# Editable‑install link – created by pip in the root of your package
+.egg-link
+
+# Egg‑info directories/files generated during packaging
+*.egg-info/
+.installed.cfg
+*.egg          # old single‑file eggs
+
+# Build & dist directories that setuptools creates
+build/
+dist/
+
+# C‑extension build artefacts
+*.so           # unix / linux shared objects
+*.dll          # windows dynamic libraries
+
+# PyInstaller or similar one‑liner binaries (if you use them)
+*.exe
+*.app
+
+# ==========================
+# Python byte‑code / caches
+# ==========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================
+# Pip & wheel cache directories
+# ==========================
+
+# These are global to your machine – usually a sub‑dir of ~/.cache/pip
+pip-wheel-metadata/
+wheels/
+
+# If you use the new pip 23+ "pip cache" in user space:
+# (you can skip this if you never run `pip cache`)
+__pycache__/   # just in case
+.venv/         # virtualenvs that live under repo (rare, but common)
+.env          # environment files created by python-dotenv etc.
+
+# ==========================
+# Development / tooling artefacts
+# ==========================
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage.*
+*.cover
+nosetests.xml
+
+# VSCode/IDE stuff
+.vscode/
+.idea/
+*.code-workspace
+
+# Mac OS X & Windows system files
+.DS_Store
+Thumbs.db
